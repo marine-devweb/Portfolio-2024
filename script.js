@@ -1,3 +1,3 @@
-function linkProject() {
-    window.location.href = "https://www.example.com";
+function linkProject(link) {
+    window.location.href = link;
 }
