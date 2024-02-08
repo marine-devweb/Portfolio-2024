@@ -27,3 +27,22 @@ h1 {
 .thumbnail:hover {
     transform: scale(1.1);
 }
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #cbac89;
+    color: black;
+    height: 50px;
+}
+
+.navbar a {
+    margin-right: 10px;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: red;
+}
