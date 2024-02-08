@@ -1,3 +1,3 @@
 function linkProject(link) {
-    window.location.href = link;
+    window.open(link, '_blank');
 }
