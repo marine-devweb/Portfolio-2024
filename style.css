@@ -98,11 +98,6 @@ footer ul li {
     padding-right: 50px;
 }
 
-footer a {
-    text-decoration: none;
-    color: black;
-}
- 
 /* Quand la largeur de la fenêtre fait 280px */
 @media screen and (width: 280px) {
     body { 
@@ -142,12 +137,13 @@ footer a {
     }
 
     h1 {
+        color:red;
         width: 100% !important;
     }
 
     .thumbnail {
-        height:160px !important;
-        width: 160px;
+        height:200px !important;
+        width: 200px;
     }
 }
 
@@ -158,6 +154,7 @@ footer a {
     }
 
     h1 {
+        color:red;
         width: 100% !important;
     }
 
@@ -174,6 +171,7 @@ footer a {
     }
     
     h1 {
+        color:red;
         width: 100% !important;
     }
 
@@ -190,6 +188,7 @@ footer a {
     }
     
     h1 {
+        color:red;
         width: 100% !important;
     }
 
@@ -206,6 +205,7 @@ footer a {
     }
     
     h1 {
+        color:red;
         width: 100% !important;
     }
 
@@ -222,6 +222,7 @@ footer a {
     }
     
     h1 {
+        color:red;
         width: 100% !important;
     }
 
