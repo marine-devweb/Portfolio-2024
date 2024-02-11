@@ -199,7 +199,7 @@ footer a {
     }
 }
 
-/* Quand la largeur de la fenêtre fait 412px et  1024px*/
+/* Quand la largeur de la fenêtre fait 1024px*/
 @media screen and (width: 1024px) {
     body { 
         width: 1024px !important;
@@ -215,7 +215,7 @@ footer a {
     }
 }
 
-/* Quand la largeur de la fenêtre   1280px */
+/* Quand la largeur de la fenêtre fait 1280px */
 @media screen and (width: 1280px) {
     body { 
         width: 1280px !important;
