@@ -2,25 +2,28 @@ body {
     font-family: Arial, sans-serif;
     margin: 0px !important;
     padding: 0px !important;
+    width: 100% !important; 
+    height: 100% !important;
     background-color: #ffe771;
 }
 
 h1 {
+    margin: 0px !important;
+    width: 100% !important; 
     text-align: center;
-    margin: 50px 0px;
     background-color: blue;
 }
 
-.container {
+.gallery {
+    height: 100% !important;
+    margin: 0px !important;
+    width: 100% !important;
+    background-color: aqua;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-bottom: 100px;
-    margin-right: auto;
-    margin-left: auto;
     padding-right: 15px;
     padding-left: 15px;
-    margin-bottom: auto;
 }
 
 .item {
@@ -33,6 +36,7 @@ h1 {
     height: 200px;
     transition: transform 0.3s;
     cursor: pointer;
+    margin: 0px !important;
 }
 
 .thumbnail:hover {
@@ -40,41 +44,49 @@ h1 {
 }
 
 /* Navbar */
-.navbar {
-    position: fixed;
-    top: 0;
+nav {
+    /* position: fixed; */
+    width: 100%;
     background-color: #cbac89;
-    height: 40px;
-    width: 100% !important;
-    text-align: right;
-    padding-top: 20px;
+    padding: 20px;
 }
 
-.navbar a {
-    margin-right: 10px;
-    color: black;
-    padding: 10px 20px;
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding-right: 50px;
+}
+
+nav a {
     text-decoration: none;
+    color: black;
 }
 
-.navbar a:hover {
+nav a:hover {
     color: red;
 }
 
 /* Footer */
-.footer {
+footer {
+    position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100% !important;
     background-color: #cbac89;
     padding: 20px;
     color: black;
 }
 
-.footer ul {
+footer ul {
     display: flex;
     flex-direction: row;
-    align-items: center;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -82,7 +94,7 @@ h1 {
     text-decoration: none;
 }
 
-.footer ul li {
+footer ul li {
     padding-right: 50px;
 }
 
