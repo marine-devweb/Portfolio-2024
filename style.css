@@ -1,14 +1,15 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0px !important;
-    padding: 0px !important;
-    width: 100% !important; 
-    height: 100% !important;
+    margin: 0px;
+    padding: 0px;
+    width: 100%; 
+    height: 100%;
     background-color: #ffe771;
 }
 
 h1 {
     margin: 0px !important;
+    padding-top:90px;
     width: 100% !important; 
     text-align: center;
     background-color: blue;
@@ -17,7 +18,7 @@ h1 {
 .gallery {
     height: 100% !important;
     margin: 0px !important;
-    width: 100% !important;
+    /* width: 100% !important; */
     background-color: aqua;
     display: flex;
     justify-content: center;
@@ -32,11 +33,11 @@ h1 {
 
 .thumbnail {
     border-radius: 5px;
-    width: 100%;
+    width: 300px;
     height: 200px;
     transition: transform 0.3s;
     cursor: pointer;
-    margin: 0px !important;
+    scroll
 }
 
 .thumbnail:hover {
@@ -45,7 +46,7 @@ h1 {
 
 /* Navbar */
 nav {
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     background-color: #cbac89;
     padding: 20px;
@@ -98,20 +99,130 @@ footer ul li {
     padding-right: 50px;
 }
 
-@media (min-width: 768px) {
-    .container {
-        max-width: 750px;
+/* Quand la largeur de la fenêtre fait 280px */
+@media screen and (width: 280px) {
+    body { 
+        width: 280px !important;
+    }
+    h1 {
+        width: 100% !important;
+    }
+
+    .thumbnail {
+        height:180px !important;
+        width: 180px;
     }
 }
 
-@media (min-width: 992px) {
-    .container {
-        max-width: 970px;
+/* Quand la largeur de la fenêtre fait 360px */
+@media screen and (width: 360px) {
+    body { 
+        width: 360px !important;
+    }
+
+    h1 {
+        width: 100% !important;
+    }
+
+    .thumbnail {
+        height:150px !important;
+        width: 150px;
     }
 }
 
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1170px;
+
+/* Quand la largeur de la fenêtre fait 375px */
+@media screen and (width: 375px) {
+    body { 
+        width: 375px !important;
+    }
+
+    h1 {
+        width: 100% !important;
+    }
+
+    .thumbnail {
+        height:160px !important;
+        width: 160px;
+    }
+}
+
+/* Quand la largeur de la fenêtre fait 390px */
+@media screen and (width: 390px) {
+    body { 
+        width: 390px !important;
+    }
+
+    h1 {
+        width: 100% !important;
+    }
+
+    .thumbnail {
+        height:200px !important;
+        width: 200px;
+    }
+}
+
+/* Quand la largeur de la fenêtre fait 412px */
+@media screen and (width: 412px) {
+    body { 
+        width: 412px !important;
+    }
+    
+    h1 {
+        width: 100% !important;
+    }
+
+    .thumbnail {
+        height:200px !important;
+        width: 200px;
+    }
+}
+
+/* Quand la largeur de la fenêtre fait 768px */
+@media screen and (width: 768px) {
+    body { 
+        width: 768px !important;
+    }
+    
+    h1 {
+        width: 100% !important;
+    }
+
+    .thumbnail {
+        height:100px !important;
+        width: 100px;
+    }
+}
+
+/* Quand la largeur de la fenêtre fait 412px et  1024px*/
+@media screen and (width: 1024px) {
+    body { 
+        width: 1024px !important;
+    }
+    
+    h1 {
+        width: 100% !important;
+    }
+
+    .thumbnail {
+        height:200px !important;
+        width: 200px;
+    }
+}
+
+/* Quand la largeur de la fenêtre   1280px */
+@media screen and (width: 1280px) {
+    body { 
+        width: 1280px !important;
+    }
+    
+    h1 {
+        width: 100% !important;
+    }
+
+    .thumbnail {
+        height:250px !important;
+        width: 250px;
     }
 }
