@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0px !important;
+    padding: 0px !important;
     background-color: #ffe771;
 }
 
@@ -44,9 +44,10 @@ h1 {
     position: fixed;
     top: 0;
     background-color: #cbac89;
-    height: 50px;
+    height: 40px;
     width: 100% !important;
     text-align: right;
+    padding-top: 20px;
 }
 
 .navbar a {
@@ -62,7 +63,6 @@ h1 {
 
 /* Footer */
 .footer {
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -73,12 +73,17 @@ h1 {
 
 .footer ul {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
     list-style-type: none;
+    padding: 0;
+    margin: 0;
     color: black;
     text-decoration: none;
+}
+
+.footer ul li {
+    padding-right: 50px;
 }
 
 @media (min-width: 768px) {
