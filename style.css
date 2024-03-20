@@ -1,233 +1,77 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0px;
-    padding: 0px;
-    width: 100%; 
-    height: 100%;
-    background-color: #ffe771;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0b0941;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS'; 
 }
 
-h1 {
-    margin: 0px !important;
-    padding-top:90px;
-    width: 100% !important; 
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    font-size: 18px;
+} 
+
+a {
+    background-color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
     text-align: center;
-    background-color: blue;
+    margin: 10px;
+    color: #0b0941;
+    text-decoration: none;
+    width: 50%;
 }
 
-.gallery {
-    height: 100% !important;
-    margin: 0px !important;
-    /* width: 100% !important; */
-    background-color: aqua;
+li {
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.info {
+    padding-bottom: 7px;
+}
+
+.link {
     display: flex;
     justify-content: center;
+}
+
+ul {
+    padding-left: 0px !important;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.item {
-    padding: 50px;
-}
-
-.thumbnail {
-    border-radius: 5px;
-    width: 300px;
+  }
+  
+  .card {
+    width: 200px;
     height: 200px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.thumbnail:hover {
-    transform: scale(1.1);
-}
-
-/* Navbar */
-nav {
-    position: fixed;
-    width: 100%;
-    background-color: #cbac89;
-    padding: 20px;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    padding-right: 50px;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-}
-
-nav a:hover {
-    color: red;
-}
-
-/* Footer */
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100% !important;
-    background-color: #cbac89;
-    padding: 20px;
-    color: black;
-}
-
-footer ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    color: black;
-    text-decoration: none;
-}
-
-footer ul li {
-    padding-right: 50px;
-}
-
-/* Quand la largeur de la fenêtre fait 280px */
-@media screen and (width: 280px) {
-    body { 
-        width: 280px !important;
-    }
-    h1 {
-        width: 100% !important;
-    }
-
-    .thumbnail {
-        height:180px !important;
-        width: 180px;
-    }
-}
-
-/* Quand la largeur de la fenêtre fait 360px */
-@media screen and (width: 360px) {
-    body { 
-        width: 360px !important;
-    }
-
-    h1 {
-        width: 100% !important;
-    }
-
-    .thumbnail {
-        height:150px !important;
-        width: 150px;
-    }
-}
-
-
-/* Quand la largeur de la fenêtre fait 375px */
-@media screen and (width: 375px) {
-    body { 
-        width: 375px !important;
-    }
-
-    h1 {
-        color:red;
-        width: 100% !important;
-    }
-
-    .thumbnail {
-        height:200px !important;
-        width: 200px;
-    }
-}
-
-/* Quand la largeur de la fenêtre fait 390px */
-@media screen and (width: 390px) {
-    body { 
-        width: 390px !important;
-    }
-
-    h1 {
-        color:red;
-        width: 100% !important;
-    }
-
-    .thumbnail {
-        height:200px !important;
-        width: 200px;
-    }
-}
-
-/* Quand la largeur de la fenêtre fait 412px */
-@media screen and (width: 412px) {
-    body { 
-        width: 412px !important;
-    }
-    
-    h1 {
-        color:red;
-        width: 100% !important;
-    }
-
-    .thumbnail {
-        height:200px !important;
-        width: 200px;
-    }
-}
-
-/* Quand la largeur de la fenêtre fait 768px */
-@media screen and (width: 768px) {
-    body { 
-        width: 768px !important;
-    }
-    
-    h1 {
-        color:red;
-        width: 100% !important;
-    }
-
-    .thumbnail {
-        height:100px !important;
-        width: 100px;
-    }
-}
-
-/* Quand la largeur de la fenêtre fait 1024px*/
-@media screen and (width: 1024px) {
-    body { 
-        width: 1024px !important;
-    }
-    
-    h1 {
-        color:red;
-        width: 100% !important;
-    }
-
-    .thumbnail {
-        height:200px !important;
-        width: 200px;
-    }
-}
-
-/* Quand la largeur de la fenêtre fait 1280px */
-@media screen and (width: 1280px) {
-    body { 
-        width: 1280px !important;
-    }
-    
-    h1 {
-        color:red;
-        width: 100% !important;
-    }
-
-    .thumbnail {
-        height:250px !important;
-        width: 250px;
-    }
-}
+    background-color: #f0f0f0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .card:hover {
+    background-color: #ccc;
+  }
+  
